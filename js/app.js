@@ -36,4 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+if (burger && menu) {
+    burger.addEventListener('click', () => {
+        // Переключаем класс для анимации самой кнопки
+        burger.classList.toggle('hero__burger--active');
+        // Переключаем класс для выезда меню
+        menu.classList.toggle('hero__nav--active');
+        // Блокируем скролл страницы при открытом меню
+        document.body.classList.toggle('no-scroll');
+    });
+
+    // Закрываем меню при клике на ссылку
+    const navLinks = document.querySelectorAll('.hero__menu-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('hero__burger--active');
+            menu.classList.remove('hero__nav--active');
+        });
+    });
+}
+
 });
