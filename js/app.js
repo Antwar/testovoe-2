@@ -2,6 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroBody = document.querySelector('.hero__body');
     const dots = document.querySelectorAll('.hero__dot');
     const accordionItems = document.querySelectorAll('.accordion__item');
+    const burger = document.querySelector('.hero__burger');
+    const nav = document.querySelector('.hero__nav');
+    const body = document.body;
+    const navLinks = document.querySelectorAll('.hero__menu-link');
     
     let currentSlide = 0;
 
@@ -36,27 +40,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
+    // Открывание меню
+    const toggleMenu = () => {
+        burger.classList.toggle('active');
+        nav.classList.toggle('active');
+        
+        body.classList.toggle('no-scroll');
+    };
 
-if (burger && menu) {
-    burger.addEventListener('click', () => {
-        // Переключаем класс для анимации самой кнопки
-        burger.classList.toggle('hero__burger--active');
-        // Переключаем класс для выезда меню
-        menu.classList.toggle('hero__nav--active');
-        // Блокируем скролл страницы при открытом меню
-        document.body.classList.toggle('no-scroll');
-    });
+    // Закрытие меню
+    const closeMenu = () => {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        body.classList.remove('no-scroll');
+    };
 
-    // Закрываем меню при клике на ссылку
-    const navLinks = document.querySelectorAll('.hero__menu-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            burger.classList.remove('hero__burger--active');
-            menu.classList.remove('hero__nav--active');
+    if (burger && nav) {
+        burger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
         });
-    });
-}
+
+        nav.addEventListener('click', (e) => {
+            if (e.target === nav) {
+                closeMenu();
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+    }
 
 });
