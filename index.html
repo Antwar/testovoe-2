@@ -8,46 +8,50 @@
 </head>
 <body>
 
-    <main class="page-main">
+    <main>
         <section class="hero">
             <aside class="hero__aside">
-                <div class="hero__aside-content">
-                    <h2 class="hero__aside-title">Начать зарабатывать</h2>
-                    <a href="#" class="hero__aside-link">
-                        <img src="img/arrow-right.svg" alt="Начать" class="hero__aside-icon">
-                    </a>
-                </div>
+                <a href="#" class="hero__aside-full-link">
+                    <div class="hero__aside-content">
+                        <h2 class="hero__aside-title">Начать зарабатывать</h2>
+                            <img src="img/arrow-right.svg" alt="Начать" class="hero__aside-icon">
+                    </div>
+                </a>
             </aside>
 
-            <div class="hero__body">
+            <div class="hero__body hero__body--slide-2">
                 <header class="hero__header">
                     <nav class="hero__nav">
                         <ul class="hero__menu">
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">О компании</a></li>
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Инвестору</a></li>
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Новости</a></li>
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Отзывы</a></li>
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">F.A.Q</a></li>
-                            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Контакты</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">О компании</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">Инвестору</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">Новости</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">Отзывы</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">F.A.Q</a></li>
+                            <li class="hero__menu-item"><a href="#" class="hero__menu-link nav-text">Контакты</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="hero__login btn-secondary">Вход/Регистрация</a>
+                    <a href="#" class="hero__auth-button nav-text">Вход/Регистрация</a>
                 </header>
 
                 <div class="hero__content">
-                    <h1 class="hero__title">
-                        Сегодня рынок IT-технологий измеряется 
-                        <span class="hero__title-accent">уже триллионами долларов</span>
-                    </h1>
-                    <p class="hero__description">
-                        Мы знаем как заработать свою долю прибыли. 
-                        Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами.
-                    </p>
-                    <button type="button" class="button hero__button button--secondary">Калькулятор прибыли</button>
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Сегодня рынок 
+                            <span class="hero__title-accent">IT-технологий измеряется уже триллионами долларов</span>
+                        </h1>
+                        <p class="hero__description">
+                            Мы знаем как заработать свою долю прибыли. 
+                            <span class="hero__description-accent">
+                                Регистрируйтесь на нашей платформе и начинайте зарабатывать с нами.
+                            </span>
+                        </p>
+                        <button class="button hero__button button--secondary">Калькулятор прибыли</button>
+                    </div>
                     
                     <div class="hero__pagination">
-                        <button class="hero__dot hero__dot--active"></button>
                         <button class="hero__dot"></button>
+                        <button class="hero__dot hero__dot--active"></button>
                         <button class="hero__dot"></button>
                     </div>
                 </div>
@@ -63,16 +67,18 @@
                         </div>
   
                         <div class="features__grid-item">
-                            <img src="img/work-1.jpg" alt="Аналитика данных" class="features__grid-img">
+                            <img src="img/work-1.webp" alt="Аналитика данных" class="features__grid-img">
                         </div>
   
                         <div class="features__grid-item features__grid-item--wide">
-                            <img src="img/work-2.jpg" alt="Работа за ноутбуком" class="features__grid-img">
+                            <img src="img/work-2.webp" alt="Работа за ноутбуком" class="features__grid-img">
                         </div>
                     </div>
 
                     <div class="features__info">
-                        <h2 class="features__title">Как мы работаем и на чем зарабатываем</h2>
+                        <h2 class="features__title title">Как мы работаем 
+                            <span class="features__title-accent">и на чем зарабатываем</span>
+                        </h2>
                         <p class="features__text">
                             Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного 
                             бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка. 
@@ -88,27 +94,36 @@
 
                 <div class="features__cards">
                     <article class="benefit-card">
-                        <img src="img/icon-blockchain.svg" alt="" class="benefit-card__icon">
-                        <h3 class="benefit-card__title">Блокчейн и криптовалюта</h3>
-                        <p class="benefit-card__text">
+                        <div class="benefit-card__row">
+                            <img src="img/features-icon.svg" alt="features icon" class="benefit-card__icon">
+                            <div class="benefit-card__divider"></div>
+                            <h3 class="benefit-card__title text">Блокчейн и криптавалюта</h3>
+                        </div>
+                        <p class="benefit-card__text text">
                             Сегодня IT-проекты в этой сфере в центре внимания инвесторов всего мира. Но эти технологии интересуют нас 
                             не только сами по себе, мы рассматриваем перспективы их внедрение в e-commerce и в развитие маркетплейсов.
                         </p>
                     </article>
 
                     <article class="benefit-card">
-                        <img src="img/icon-blockchain.svg" alt="" class="benefit-card__icon">
-                        <h3 class="benefit-card__title">Исскуственный интелект в сфере беттинга</h3>
-                        <p class="benefit-card_ _text">
+                        <div class="benefit-card__row">
+                            <img src="img/features-icon.svg" alt="features icon" class="benefit-card__icon">
+                            <div class="benefit-card__divider"></div>
+                            <h3 class="text benefit-card__title benefit-card__title--wide">Исскуственный интелект в сфере беттинга</h3>
+                        </div>
+                        <p class="benefit-card__text text">
                             Запатентованный инфопродукт собственного производства на основе искусственного 
                             интеллекта служит инструментом получения стабильного дохода в сфере беттинга. 
                         </p>
                     </article>
 
                     <article class="benefit-card">
-                        <img src="img/icon-blockchain.svg" alt="" class="benefit-card__icon">
-                        <h3 class="benefit-card__title">Блокчейн и криптовалюта</h3>
-                        <p class="benefit-card__text">
+                        <div class="benefit-card__row">
+                            <img src="img/features-icon.svg" alt="features icon" class="benefit-card__icon">
+                            <div class="benefit-card__divider"></div>
+                            <h3 class="benefit-card__title text">Блокчейн и криптавалюта</h3>
+                        </div>
+                        <p class="benefit-card__text text">
                             Некоторые инвесторы уже разуверились в этих сферах, но технология виртуальной 
                             реальности «воскресила» эти отрасли и превратила «Old School» в «New Sexy».
                         </p>
@@ -120,56 +135,56 @@
         <section class="invest">
             <div class="invest__container">
     
-                <div class="invest__image-wrapper">
-                <img src="img/code-bg.jpg" alt="Код на мониторе" class="invest__img">
-                </div>
+                <div class="invest__image-side"></div>
 
                 <div class="invest__body">
       
-                <div class="invest__info">
-                    <h2 class="invest__title">Инвестировать с нами надежно и выгодно</h2>
-                    <div class="invest__divider"></div>
-                    <button type="button" class="btn-primary invest__btn">Начать зарабатывать</button>
-                </div>
-
-                <div class="invest__steps steps">
-                    <div class="steps__item">
-                    <div class="steps__number">1</div>
-                    <div class="steps__content">
-                        <h3 class="steps__title">Регистрация на сайте</h3>
-                        <p class="steps__text">Пройдите процедуру регистрации на сайте для открытия счета. Нажмите кнопку «Регистрация» и заполните все необходимые поля.</p>
-                    </div>
+                    <div class="invest__info">
+                        <h2 class="invest__title title">Инвестировать с нами надежно и выгодно</h2>
+                        <div class="invest__divider"></div>
+                        <a href="#" class="button button--primary invest__button">Начать зарабатывать</a>
                     </div>
 
-                    <div class="steps__item">
-                    <div class="steps__number steps__number--active">2</div>
-                    <div class="steps__content">
-                        <h3 class="steps__title">Открывайте депозит</h3>
-                        <p class="steps__text">Сделайте инвестицию на удобный срок на сумму от 100 рублей и ваши деньги начнут работать на вас.</p>
-                    </div>
-                    </div>
+                    <div class="invest__steps steps">
+                        <div class="steps__item">
+                            <div class="steps__number">1</div>
+                            <div class="steps__content">
+                                <h3 class="steps__title text">Регистрация на сайте</h3>
+                                <p class="steps__text text">Пройдите процедуру регистрации на сайте для открытия счета. Нажмите кнопку «Регистрация» и заполните все необходимые поля.</p>
+                            </div>
+                        </div>
 
-                    <div class="steps__item">
-                    <div class="steps__number">3</div>
-                    <div class="steps__content">
-                        <h3 class="steps__title">Распоряжайтесь прибылью</h3>
-                        <p class="steps__text">По факту окончания периода инвестиции вклад с прибылью будут доступны для вывода или создания нового депозита.</p>
-                    </div>
-                    </div>
-                </div> </div> </div>
+                        <div class="steps__item">
+                            <div class="steps__number steps__number--active">2</div>
+                            <div class="steps__content">
+                                <h3 class="steps__title text">Открывайте депозит</h3>
+                                <p class="steps__text text">Сделайте инвестицию на удобный срок на сумму от 100 рублей и ваши деньги начнут работать на вас.</p>
+                            </div>
+                        </div>
+
+                        <div class="steps__item">
+                            <div class="steps__number">3</div>
+                            <div class="steps__content">
+                                <h3 class="steps__title text">Распоряжайтесь прибылью</h3>
+                                <p class="steps__text text">По факту окончания периода инвестиции вклад с прибылью будут доступны для вывода или создания нового депозита.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
         </section>
 
         <section class="faq">
             <div class="faq__container">
-                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+                <h2 class="faq__title title">Часто задаваемые вопросы</h2>
                 <div class="faq__divider"></div>
 
                 <div class="faq__grid">
                     <div class="faq__questions accordion">
-                        <details class="accordion__item" open>
+                        <details class="accordion__item">
                         <summary class="accordion__header">
                             <span class="accordion__icon">?</span>
-                            <span class="accordion__question">Что нужно, чтобы начать работу с future technologies company (ftc)?</span>
+                            <span class="accordion__question text">Что нужно, чтобы начать работу с future technologies company (ftc)?</span>
                             <div class="accordion__arrow"></div>
                         </summary>
                         <div class="accordion__content">
@@ -180,7 +195,7 @@
                         <details class="accordion__item">
                             <summary class="accordion__header">
                             <span class="accordion__icon">?</span>
-                            <span class="accordion__question">Могу ли я не заработать, инвестируя с future technologies company (ftc)?</span>
+                            <span class="accordion__question text">Могу ли я не заработать, инвестируя с future technologies company (ftc)?</span>
                             <div class="accordion__arrow"></div>
                         </summary>
                         <div class="accordion__content">
@@ -191,7 +206,7 @@
                         <details class="accordion__item">
                         <summary class="accordion__header">
                             <span class="accordion__icon">?</span>
-                            <span class="accordion__question">Какая минимальная и максимальная сумма депозита?</span>
+                            <span class="accordion__question text">Какая минимальная и максимальная сумма депозита?</span>
                             <div class="accordion__arrow"></div>
                         </summary>
                         <div class="accordion__content">
@@ -201,11 +216,13 @@
                     </div> 
 
                     <aside class="faq__info-card info-card">
-                        <h3 class="info-card__title">Какая минимальная и максимальная сумма депозита?</h3>
+                        <h3 class="info-card__title">Какая минимальная 
+                            <span class="info-card__title-accent">и максимальная сумма депозита?</span>
+                        </h3>
                         <div class="info-card__divider"></div>
                         <ul class="info-card__list">
-                        <li class="info-card__item">Минимальный размер депозита – 100 рублей.</li>
-                        <li class="info-card__item">Максимальный размер депозита – <strong>80 000 000 рублей.</li>
+                        <li class="info-card__item text">Минимальный размер депозита – <strong>100 рублей.</strong></li>
+                        <li class="info-card__item text">Максимальный размер депозита – <strong>80 000 000 рублей.</strong></li>
                         </ul>
                     </aside>
                 </div>
@@ -216,34 +233,34 @@
             <div class="stats__container">
     
                 <header class="stats__header">
-                    <h2 class="stats__title">Статистика компании</h2>
+                    <h2 class="stats__title title">Статистика компании</h2>
                     <div class="stats__divider"></div>
                 </header>
 
                 <ul class="stats__list">
                     <li class="stats__item">
                         <span class="stats__value">932</span>
-                        <span class="stats__label">Работаем (дней)</span>
+                        <span class="stats__label text">Работаем (дней)</span>
                     </li>
       
                     <li class="stats__item">
                         <span class="stats__value">960696</span>
-                        <span class="stats__label">Всего инвесторов</span>
+                        <span class="stats__label text">Всего инвесторов</span>
                     </li>
       
                     <li class="stats__item">
                         <span class="stats__value">67</span>
-                        <span class="stats__label">Новых за 24 часа</span>
+                        <span class="stats__label text">Новых за 24 часа</span>
                     </li>
       
                     <li class="stats__item">
                         <span class="stats__value">109500р.</span>
-                        <span class="stats__label">Среднее пополнение</span>
+                        <span class="stats__label text">Среднее пополнение</span>
                     </li>
                 </ul>
                 
                 <div class="stats__actions">
-                    <a href="#" class="button stats__button button--primary ">Присоединиться к нам</a>
+                    <a href="#" class="button stats__button button--primary">Присоединиться к нам</a>
                     <a href="#"class="button stats__button button--secondary">Калькулятор прибыли</a>
                 </div>
 
@@ -255,7 +272,7 @@
         <div class="footer__container">
     
             <div class="footer__about">
-                <p class="footer__text">
+                <p class="footer__text text">
                     Команда, у которой за плечами не менее 12 лет работы на разных позициях в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до финансового директора инвестиционного банка.
                 </p>
             </div>
@@ -282,12 +299,12 @@
                 <div class="footer__divider"></div>
       
                 <div class="footer__contact-info">
-                    <a href="tel:+74992293333" class="footer__phone">+7 (499)-229-33-33</a>
-                    <a href="mailto:info@ftc.vin" class="footer__email">info@ftc.vin</a>
+                    <a href="tel:+74992293333" class="footer__phone text">+7 (499)-229-33-33</a>
+                    <a href="mailto:info@ftc.vin" class="footer__email text">info@ftc.vin</a>
         
                     <div class="footer__schedule">
-                        <p><strong>ПН - ПТ:</strong> 10:00 - 20:00 по МСК</p>
-                        <p><strong>СБ - ВС:</strong> свободный график</p>
+                        <p class="text footer__schedule-text"><strong>ПН - ПТ:</strong> 10:00 - 20:00 по МСК</p>
+                        <p class="text footer__schedule-text"><strong>СБ - ВС:</strong> свободный график</p>
                     </div>
                 </div>
             </div>
